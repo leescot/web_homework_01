@@ -9,7 +9,7 @@ submitBtn.addEventListener("click", () => {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": "Bearer <YOUR_API_KEY>"
+      "Authorization": "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"
     },
     body: JSON.stringify({
       prompt: userQuestion,
