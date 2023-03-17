@@ -1,29 +1,17 @@
-以下是一個示範程式，可以實現使用者輸入一個字串，並顯示這個字串反轉後的結果：
-
-html
-Copy code
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>反轉字串</title>
+    <title>網頁標題</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <label for="input">輸入字串：</label>
-    <input type="text" id="input">
-    <button id="submit">提交</button>
-    <div id="result"></div>
-
-    <script>
-      const input = document.getElementById("input");
-      const submitBtn = document.getElementById("submit");
-      const result = document.getElementById("result");
-
-      submitBtn.addEventListener("click", () => {
-        const text = input.value;
-        const reversed = text.split("").reverse().join("");
-        result.textContent = reversed;
-      });
-    </script>
+    <form>
+      <label for="user-input">輸入您的問題:</label>
+      <input type="text" id="user-input" placeholder="在此輸入您的問題...">
+      <button type="submit" id="submit-btn">送出問題</button>
+    </form>
+    <div id="api-response"></div>
+    <script src="main.js"></script>
   </body>
 </html>
