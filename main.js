@@ -18,6 +18,10 @@ submitBtn.addEventListener("click", () => {
       stop: "\n"
     })
   })
+  .then((response) => {
+  console.log(response);
+  return response.json();
+  })
   .then(response => response.json())
   .then(data => {
     apiResponse.textContent = data.choices[0].text;
