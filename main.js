@@ -13,3 +13,4 @@ submitBtn.addEventListener("click", () => {
         const text = input.value;
         const reversed = text.split("").reverse().join("");
         result.textContent = reversed;
+      });
